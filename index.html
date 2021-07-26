@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio2 - Gestão de Cadastros</title>
+  <link rel="stylesheet" href="style.css"
+
+    
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <script src="app.js"></script>
+    
+</head>
+<body>
+    <header class="menu"><!-- Início cabeçalho -->
+        <h1>LA BELLE</h1>
+        <nav class="navbar navbar-expand-sm navbar-ligth bg-danger">
+          <div class="container">
+            <div class="colapse navbar-colapse" id="nav-principal">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Cadastro</a>
+                  </li>                 
+                </ul>           
+              </div>
+        </div>
+        </nav>
+    </header>
+    
+    <section id="clientes">
+        <div class="container1">
+            <div class="row">
+                <div class="col-md-6 d-flex">
+                    <div class="align-self-center">
+                        <fieldset style="border-radius: 15px;">
+                         <legend>Cadastro de Clientes</legend>
+               
+                            <form action="" method="">
+                                
+                                <div>
+                                    <label for="nome">Nome: </label>
+                                    <input class="input" type="text" name="nome" id="campo1" required>
+                                </div><br>
+                                <div>
+                                    <label for="cpf">CPF: </label>
+                                    <input class="input" type="text" name="cpf" id="campo2" required>
+                                </div><br>
+                                <div>
+                                    <label for="email">E-mail: </label>
+                                    <input class="input" type="email" name="email" id="campo3" required>
+                                </div><br>
+                                <div>
+                                    <label for="end">Endereço: </label>
+                                    <input class="input" type="text" name="end" id="campo4" required>
+                                </div><br>
+                                <div>
+                                    <label for="tel">Telefone: </label>
+                                    <input class="input" type="text" name="tel" id="campo5" required>
+                                </div>
+                                <br>
+                                <div>
+                                    <textarea name="mensagem" id="" cols="30" rows="10">Informações Extras: </textarea>
+                                </div>
+                                <div>
+                                    <button class="btn btn-danger" type="submit" onclick="cadastrarCliente()">Salvar</button>
+                                </div>
+
+                            </form>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="caixa">
+        <div class="container2">
+            <div class="col-md-6 d-flex">
+                <fieldset style="border-radius: 15px;">
+                    <legend>Cadastro de Produtos</legend>
+                    <form action="" id="produtos" method="">
+                        <div>
+                            <label for="nome">Nome do Produto: </label>
+                            <input class="input" type="text" name="nome" id="campo1" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="cpf">Código: </label>
+                            <input class="input" type="text" name="cod" id="campo2" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="tipo">Tipo de Produto: </label>
+                            <input class="input" type="text" name="tipo" id="campo3" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="marca">Marca: </label>
+                            <input class="input" type="text" name="marca" id="campo4" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="preco">Preço: </label>
+                            <input class="input" type="text" name="preco" id="campo5" required>
+                        </div>
+                        <br>
+                        <div>
+                            <textarea name="mensagem" id="" cols="30" rows="10">Informações Extras: </textarea>
+                        </div>
+                        <div>
+                            <button class="btn btn-danger" type="submit"  onclick="cadastrarProdutos()">Salvar</button>
+                        </div>
+                    
+                    </form>
+                </fieldset>
+
+            </div>
+        </div>
+        
+    </section>
+               
+    <footer>
+        <div id="rodape">
+			
+            &copy; Copyright 2021 Desenvolvido por Maria Lucia
+
+		</div>
+    </footer>   
+</body>
+</html>
